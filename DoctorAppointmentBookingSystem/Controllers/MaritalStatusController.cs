@@ -42,7 +42,7 @@ namespace DoctorAppointmentBookingSystem.Controllers
             item.Name= maritalStatus.Name;
             item.ModifiedDate = DateTime.Now;
             item.ModifiedBy = 1;
-            db.Entry(item).State= EntityState.Modified;
+            db.Entry(item).State = EntityState.Modified;
             db.SaveChanges();
             return Redirect("/MaritalStatus");
         }
