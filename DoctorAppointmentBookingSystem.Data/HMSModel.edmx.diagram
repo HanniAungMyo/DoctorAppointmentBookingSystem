@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0464aea3f090438594643c6fdd5eab66" Name="Diagram1" >
+        <EntityTypeShape EntityType="HMSModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="HMSModel.Tbl_Booking" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="HMSModel.Tbl_Doctor" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="HMSModel.Tbl_MaritalStatus" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="HMSModel.Tbl_Menu" Width="1.5" PointX="2.75" PointY="4.75" />
+        <EntityTypeShape EntityType="HMSModel.Tbl_MenuPermission" Width="1.5" PointX="4.75" PointY="4.75" />
+        <EntityTypeShape EntityType="HMSModel.Tbl_NameType" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="HMSModel.Tbl_Registration" Width="1.5" PointX="6.75" PointY="3.75" />
+        <EntityTypeShape EntityType="HMSModel.Tbl_Role" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="HMSModel.Tbl_Speciality" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="HMSModel.Tbl_User" Width="1.5" PointX="2.75" PointY="8.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

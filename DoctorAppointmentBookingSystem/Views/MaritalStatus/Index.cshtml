@@ -1,0 +1,33 @@
+﻿@model List<DoctorAppointmentBookingSystem.Data.Tbl_MaritalStatus>
+@{
+    ViewBag.Title = "Index";
+    int row = 0;
+}
+
+<h2>Marital Status List</h2>
+<a href="/MaritalStatus/Create" type="button" class="btn btn-primary mb-3">Create</a>
+<table id="myTable" class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Marital Status</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            row = row + 1;
+            <tr>
+                <td>@row</td>
+                <td>@item.Name</td>
+                <td>
+                    <a href="/MaritalStatus/Edit?id=@item.Id" type="button" class="btn btn-success">Edit</a>
+                    <a href="/MaritalStatus/Delete?id=@item.Id" type="button" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
