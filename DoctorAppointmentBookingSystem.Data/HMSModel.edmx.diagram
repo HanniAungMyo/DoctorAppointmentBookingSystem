@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="0464aea3f090438594643c6fdd5eab66" Name="Diagram1" >
+      <Diagram DiagramId="0464aea3f090438594643c6fdd5eab66" Name="Diagram1" ZoomLevel="86" >
         <EntityTypeShape EntityType="HMSModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" />
         <EntityTypeShape EntityType="HMSModel.Tbl_Booking" Width="1.5" PointX="2.75" PointY="0.75" />
         <EntityTypeShape EntityType="HMSModel.Tbl_Doctor" Width="1.5" PointX="4.75" PointY="0.75" />

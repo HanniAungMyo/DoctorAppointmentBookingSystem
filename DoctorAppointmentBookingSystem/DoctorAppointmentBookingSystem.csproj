@@ -132,6 +132,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MaritalStatusController.cs" />
     <Compile Include="Controllers\NameTypeController.cs" />
+    <Compile Include="Controllers\SpecialityController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -196,6 +197,9 @@
     <Content Include="Views\MaritalStatus\Index.cshtml" />
     <Content Include="Views\MaritalStatus\Edit.cshtml" />
     <Content Include="Views\MaritalStatus\Create.cshtml" />
+    <Content Include="Views\Speciality\Index.cshtml" />
+    <Content Include="Views\Speciality\Edit.cshtml" />
+    <Content Include="Views\Speciality\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
