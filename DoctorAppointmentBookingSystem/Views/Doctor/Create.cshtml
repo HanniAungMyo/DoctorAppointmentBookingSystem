@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create Doctor</h2>
+
+<form action="/Doctor/Save" method="post">
+    <div class="mb-3">
+        <label class="form-label">DoctorName</label>
+        <input type="text" class="form-control" name="Name">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Speciality</label>
+        <select class="form-select" aria-label="Default select example" name="SpecialityId">
+            @foreach (var item in ViewBag.lstSpeciality)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Doctor Fee</label>
+        <input type="number" class="form-control text-end" name="DoctorFees">
+    </div>
+    <a href="/Doctor" class="btn btn-dark">Back</a>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+

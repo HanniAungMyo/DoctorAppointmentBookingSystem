@@ -21,7 +21,6 @@ namespace DoctorAppointmentBookingSystem.Controllers
         {
             return View();
         }
-
         public ActionResult Save(Tbl_Speciality speciality)
         {
             Tbl_Speciality item = new Tbl_Speciality();
