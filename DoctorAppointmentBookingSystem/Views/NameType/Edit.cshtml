@@ -3,13 +3,19 @@
     ViewBag.Title = "Edit";
 }
 
-<h2>Edit Name Type</h2>
-<form action="/NameType/Update?id=@Model.Id" method="post">
-    <div class="mb-3">
-        <label class="form-label">Name Type</label>
-        <input type="text" class="form-control" value="@Model.Type" name="Type" >
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title fw-semibold mb-4">Edit Name Type List</h5>
+        <form action="/NameType/Update?id=@Model.Id" method="post">
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label">Name Type</label>
+                    <input type="text" class="form-control" value="@Model.Type" name="Type">
+                </div>
+            </div>
+            <a href="/NameType" class="btn btn-dark">Back</a>
+            <button type="submit" class="btn btn-primary">Update</button>
+        </form>
     </div>
-    <a href="/NameType" class="btn btn-dark">Back</a>
-    <button type="submit" class="btn btn-primary">Update</button>
-</form>
+</div>
 

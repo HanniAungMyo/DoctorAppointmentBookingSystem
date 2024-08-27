@@ -12,7 +12,7 @@
         <EntityTypeShape EntityType="HMSModel.Tbl_Menu" Width="1.5" PointX="2.75" PointY="4.75" />
         <EntityTypeShape EntityType="HMSModel.Tbl_MenuPermission" Width="1.5" PointX="4.75" PointY="4.75" />
         <EntityTypeShape EntityType="HMSModel.Tbl_NameType" Width="1.5" PointX="6.75" PointY="0.75" />
-        <EntityTypeShape EntityType="HMSModel.Tbl_Registration" Width="1.5" PointX="6.75" PointY="3.75" />
+        <EntityTypeShape EntityType="HMSModel.Tbl_Registration" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="HMSModel.Tbl_Role" Width="1.5" PointX="8.75" PointY="0.75" />
         <EntityTypeShape EntityType="HMSModel.Tbl_Speciality" Width="1.5" PointX="0.75" PointY="8.75" />
         <EntityTypeShape EntityType="HMSModel.Tbl_User" Width="1.5" PointX="2.75" PointY="8.75" />

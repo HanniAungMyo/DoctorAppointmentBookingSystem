@@ -1,0 +1,99 @@
+﻿@model DoctorAppointmentBookingSystem.Data.Tbl_Registration
+@{
+    ViewBag.Title = "Edit";
+    string maleChecked = string.Empty;
+    string femaleChecked = string.Empty;
+    string selectedNameType = string.Empty;
+    string selectedMaritalStatus = string.Empty;
+}
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title fw-semibold mb-4">Edit Registration List</h5>
+        <form action="/Registration/Update?id=@Model.Id" method="post">
+            <div class="mb-3 row">
+                <label class="form-label">Name</label>
+                <div class="col-2">
+                    <select class="form-select" aria-label="Default select example" name="NameTypeId">
+                        @foreach (var item in ViewBag.lstNameType)
+                        {
+
+
+                            @*if (Model.NameTypeId == item.Id)
+                                {
+                                    <option value="@item.Id" selected>@item.Type</option>
+                                }
+                                else
+                                {
+                                    <option value="@item.Id">@item.Type</option>
+                                }*@
+                            selectedNameType = Model.NameTypeId == item.Id ? "selected" : string.Empty;
+                            <option value="@item.Id" @selectedNameType>@item.Type</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-2">
+                    <input type="text" class="form-control" name="Name" value="@Model.Name">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <div class="col-4">
+                    <label class="form-label">Date Of Birth</label>
+                    <input type="date" class="form-control" name="Dob" value="@Convert.ToDateTime(Model.Dob).ToString("MM/dd/yyyy")" format-value="MM/dd/yyyy">
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-4">
+                    <label class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" name="PhoneNo" value="@Model.PhoneNo">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <div class="col-4">
+                    <label class="form-label">Father Name</label>
+                    <input type="text" class="form-control" name="FatherName" value="@Model.FatherName">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <div>
+                    @{
+                        maleChecked = Model.Gender == "Male" ? "checked" : string.Empty;
+                        femaleChecked = Model.Gender == "Female" ? "checked" : string.Empty;
+                    }
+                    <div class="mb-3">
+                        <label class="form-label d-block">Gender</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" value="Male" name="Gender" id="Male" @maleChecked>
+                            <label class="form-check-label" for="Male">
+                                Male
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" value="Female" name="Gender" id="Female" @femaleChecked>
+                            <label class="form-check-label" for="Female">
+                                Female
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <div class="col-4">
+                    <label class="form-label">MaritalStatus</label>
+                    <select class="form-select" aria-label="Default select example" name="MaritalStatusId" value="Name">
+
+                        @foreach (var item in ViewBag.lstMaritalStatus)
+                        {
+                            selectedMaritalStatus = Model.MaritalStatusId == item.Id ? "selected" : string.Empty;
+                            <option value="@item.Id" @selectedMaritalStatus>@item.Name</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <a href="/Registration" class="btn btn-dark">Back</a>
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+        </div>
+    </div>

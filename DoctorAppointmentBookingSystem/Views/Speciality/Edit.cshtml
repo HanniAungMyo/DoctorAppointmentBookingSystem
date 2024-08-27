@@ -2,13 +2,18 @@
 @{
     ViewBag.Title = "Edit";
 }
-<h2>Edit Speciality</h2>
-<form action="/Speciality/Update?id=@Model.Id" method="post">
-    <div class="mb-3">
-        <label class="form-label">Speciality</label>
-        <input type="text" class="form-control" value="@Model.Name" name="Name">
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title fw-semibold mb-4">Edit Speciality List</h5>
+        <form action="/Speciality/Update?id=@Model.Id" method="post">
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label">Speciality</label>
+                    <input type="text" class="form-control" value="@Model.Name" name="Name">
+                </div>
+            </div>
+            <a href="/Speciality" class="btn btn-dark">Back</a>
+            <button type="submit" class="btn btn-primary">Update</button>
+        </form>
     </div>
-    <a href="/Speciality" class="btn btn-dark">Back</a>
-    <button type="submit" class="btn btn-primary">Update</button>
-</form>
-
+</div>

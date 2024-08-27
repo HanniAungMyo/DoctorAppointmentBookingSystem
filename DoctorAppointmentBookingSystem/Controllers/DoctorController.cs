@@ -38,6 +38,7 @@ namespace DoctorAppointmentBookingSystem.Controllers
         public ActionResult Create() 
         { 
             ViewBag.lstSpeciality=db.Tbl_Speciality.ToList();
+            ViewBag.lstNameType=db.Tbl_NameType.ToList();
             return View();
         }
         public ActionResult Save(Tbl_Doctor doctor)
