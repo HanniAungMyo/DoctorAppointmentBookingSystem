@@ -1,0 +1,40 @@
+﻿@model DoctorAppointmentBookingSystem.Data.Tbl_User
+@{
+    ViewBag.Title = "Edit";
+    string selectedRole = string.Empty;
+
+}
+
+<div class="card">
+    <div class="card-body">
+        <h2>Update Register</h2>
+        <form action="/Register/Update?id=@Model.Id" method="post">
+            <div class="mb-3">
+                <label class="form-label">UserName</label>
+                <input type="text" class="form-control" value="@Model.UserName" name="UserName">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">LoginName</label>
+                <input type="text" class="form-control" value="@Model.LoginName" name="LoginName" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="text" class="form-control" value="@Model.Password" name="Password" />
+            </div>
+            <div class="col-3 mb-3">
+                <select class="form-select" aria-label="Default select example" name="RoleId">
+                    @foreach (var item in ViewBag.lstRole)
+                    {
+                        selectedRole= Model.RoleId == item.Id ? "selected" : string.Empty;
+
+                        <option value="@item.Id" @selectedRole>@item.RoleName</option>
+                    }
+                </select>
+            </div>
+
+            <a href="/Register" class="btn btn-dark">Back</a>
+            <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+    </div>
+</div>

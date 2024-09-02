@@ -10,6 +10,11 @@ namespace DoctorAppointmentBookingSystem.Controllers
     {
         public ActionResult Index()
         {
+            var userName=Session["userName"];
+            if(userName == null)
+            {
+                return Redirect("/login");
+            }
             return View();
         }
 

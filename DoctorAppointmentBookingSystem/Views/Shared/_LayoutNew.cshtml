@@ -19,9 +19,7 @@
             <div>
                 <div class="brand-logo d-flex align-items-center justify-content-between">
                     <a href="./index.html" class="text-nowrap logo-img">
-                        @*<img src="~/Content/assets/images/logos/logo.svg" alt="" />**@
-                       
-                        HMS
+                        <img src="~/Content/assets/images/logos/logo.svg" alt="" />                       
                     </a>
                     <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
                         <i class="ti ti-x fs-8"></i>
@@ -50,8 +48,17 @@
                         <li class="sidebar-item">
                             <a class="sidebar-link" href="/NameType/" aria-expanded="false">
                                 @*<iconify-icon icon="solar:layers-minimalistic-bold-duotone"></iconify-icon>*@
-                                <i class="ti ti-gender-transgender"></i>
-                                <span class="hide-menu">Name Type</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-gender-transgender">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                                    <path d="M15 9l6 -6" />
+                                    <path d="M21 7v-4h-4" />
+                                    <path d="M9 9l-6 -6" />
+                                    <path d="M3 7v-4h4" />
+                                    <path d="M5.5 8.5l3 -3" />
+                                    <path d="M12 16v5" />
+                                    <path d="M9.5 19h5" />
+                                </svg>                                <span class="hide-menu">Name Type</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
@@ -72,7 +79,8 @@
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                     <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" />
                                     <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" />
-                                </svg>                                <span class="hide-menu">Speciality</span>
+                                </svg>
+                                <span class="hide-menu">Speciality</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
@@ -113,6 +121,18 @@
                                 <span class="hide-menu">Booking</span>
                             </a>
                         </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="/Role/" aria-expanded="false">
+                                @*<iconify-icon icon="solar:text-field-focus-line-duotone"></iconify-icon>*@
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-message-circle-user">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M19 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                    <path d="M22 22a2 2 0 0 0 -2 -2h-2a2 2 0 0 0 -2 2" />
+                                    <path d="M12.454 19.97a9.9 9.9 0 0 1 -4.754 -.97l-4.7 1l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c1.667 1.423 2.596 3.294 2.747 5.216" />
+                                </svg>
+                                <span class="hide-menu">RoleName</span>
+                            </a>
+                        </li>
                         <li>
                             <span class="sidebar-divider lg"></span>
                         </li>
@@ -121,13 +141,13 @@
                             <span class="hide-menu">AUTH</span>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="./authentication-login.html" aria-expanded="false">
+                            <a class="sidebar-link" href="/login" aria-expanded="false">
                                 <iconify-icon icon="solar:login-3-line-duotone"></iconify-icon>
                                 <span class="hide-menu">Login</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="./authentication-register.html" aria-expanded="false">
+                            <a class="sidebar-link" href="/Register/" aria-expanded="false">
                                 <iconify-icon icon="solar:user-plus-rounded-line-duotone"></iconify-icon>
                                 <span class="hide-menu">Register</span>
                             </a>
@@ -182,7 +202,7 @@
                                             <i class="ti ti-list-check fs-6"></i>
                                             <p class="mb-0 fs-3">My Task</p>
                                         </a>
-                                        <a href="./authentication-login.html" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                                        <a href="/login" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
                                     </div>
                                 </div>
                             </li>
